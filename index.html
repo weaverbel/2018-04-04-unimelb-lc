@@ -29,27 +29,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   And run 'bin/workshop_check.py' *before* committing to make sure that changes are good.
 -->
 
-<!--
-  EVENTBRITE
-
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
-{% else %}
-<style type="text/css">
-.e2614294 { background-color:#EB1D1D; border:1px solid #EB1D1D; color: #F2FCFC!important; -moz-box-shadow:inset 0px 1px 0px 0px #ffffff; -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff; box-shadow:inset 0px 1px 0px 0px #ffffff;font-size: 20px; font-family: arial; padding:6px 12px; display:inline-block;text-decoration:none; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; border-color: #F2FCFC; } .e2614294:hover { background-color:#F2FCFC; color: #EB1D1D!important; }</style><a href="http://calendar.library.ucla.edu/event/3496418" class="e2614294">REGISTER NOW!</a>
-{% endif %}
-
 <h2 id="general">General Information</h2>
 
 <!--
